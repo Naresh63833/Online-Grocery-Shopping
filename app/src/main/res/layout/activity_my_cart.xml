@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_Cart_Activity">
+
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape22"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="310dp"
+        android:background="#00000000"
+        android:contentDescription="@string/about"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="cartback"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Carts "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp"/>
+    <ProgressBar
+        android:id="@+id/progress_bar_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint1"
+        android:visibility="gone"
+        android:layout_below="@+id/topbar">
+
+        <ImageView
+            android:id="@+id/new_products_img"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:src="@drawable/addcart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".3"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/alice"
+            android:text="Your Cart is empty"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/new_products_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0"
+            android:textColor="#36D424"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/overAllAmount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#1DF805"
+            android:fontFamily="@font/alice"
+            android:padding="10dp"
+            android:text="Total Price :0$"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/overAllAmount"
+            app:layout_constraintVertical_bias="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                tools:listitem="@layout/my_cart_item"/>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/lawngreen"
+                    android:fontFamily="@font/aclonica"
+                    android:textSize="15sp"
+                    android:text="First fill your Order Details afterwards, book your order happily."/>
+                <EditText
+                    android:id="@+id/cartName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Name"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape77"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/cartPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape77"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp" />
+                <EditText
+                    android:id="@+id/cartAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Address With Pincode"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape77"
+                    android:gravity="top" />
+                <EditText
+                    android:id="@+id/cartDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Details ( Example)\n\nApple - 1kg = 60Rs\nPine Apple - 1kg = 100Rs"
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape77"
+                    android:gravity="top" />
+                <EditText
+                    android:id="@+id/cartAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Over All Amount"
+                    android:paddingLeft="10dp"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape77"
+                    android:inputType="number"/>
+                <Button
+                    android:id="@+id/orderdetails"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/shape22"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Submit Order Details"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+        </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buy_now"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#11F502"
+                android:text="Buy Now\nOnline Payment"
+                android:textColor="#757575"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cashOnDelivery"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#11F502"
+                android:text="Buy Now\nCash On Delivery"
+                android:textColor="#757575"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

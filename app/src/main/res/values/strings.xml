@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Grocery Shop</string>
+    <string name="welcome">We are Happy to have you! Get Ready to buy Fresh and Freeze, Grocery and anything you want.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="description">Lorem Ipsum placeholder text for use in your graphic, print and web layouts, and discover plugins for your favorite writing, design and blogging tools. Explore the origins, history and meaning of the famous passage, and learn how Lorem Ipsum went from …</string>
+
+    <string name="about">"        A grocery store is a retail shop that primarily sells food. This can include fresh produce, meat, dairy products, and pantry staples such as grains, snacks, and canned goods. Many grocery stores also sell household items and personal care products. They can be independently owned or part of a chain. Some grocery stores also have a pharmacy, bakery, and deli counter. Grocery stores have been a staple in communities for many years, providing a convenient way for people to purchase the food and household items they need."</string>
+    <string name="about1">"       Today, online grocery is an area of increasing investment and focus for many traditional supermarkets and CPG brands. However, despite its relative underdevelopment compared to other categories sold online, grocery is not new to the internet arena. The sector has a rich and storied history that holds warnings, lessons and predictions for those embarking on their online journeys today."</string>
+    <string name="about2">"       The late 1990s was a time of great optimism for internet retailers. Consumers had just started ordering products online, and there was a widely held view that this new method of shopping would completely revolutionize the industry."</string>
+    <string name="about3">"       As the largest single retail sector, grocery was an early area of focus. It potentially offered the lucrative reward of high-spending consumers who shopped regularly. It also had the benefit of being something that many people did not particularly enjoy shopping for and so was crying out for a change that increased convenience and saved consumers time."</string>
+    <string name="about4">"       Significantly, the early movers in the industry were not supermarkets or food manufacturers, but technology companies keen to use their knowledge of coding and systems to shake up a sector they believed to be ripe for change. They were encouraged and supported by investors who, at this time, were throwing money at any company with a .com suffix."</string>
+    <string name="about5">"       HomeGrocer.com was one of the first online supermarket players. It started in 1997 in Washington state and quickly obtained investment to allow it to create the infrastructure needed to support the business, including a huge warehouse and a fleet of vans. Early growth was impressive, and by mid-2000, sales had reached over $1 million a day. This rapid growth fueled more investment for expansion into other markets, including California, Oregon, Texas, Georgia and Illinois."</string>
+    <string name="about6">"       The other early mover in online grocery was Webvan, founded in 1996. After a successful launch in California, the firm embarked on aggressive expansion plans, with a goal to operate in 26 major cities around the United States. Its confidence in the future of online grocery was underlined by an astonishing $1 billion order with an engineering and construction firm to build out new warehouses and the infrastructure to support them."</string>
+    <string name="about7">"       Today, online is once again a battleground for grocery. However, the field is not dominated by technology firms or pure-play online retailers. Rather, it is crowded with traditional grocery chains like Walmart, Kroger, Target and even Amazon-owned Whole Foods."</string>
+    <string name="about8">"       The arguments that applied to the early pioneers are still relevant and represent issues that grocers are having to work through. However, supermarkets have several strategic advantages that make their ventures into online more likely to generate success."</string>
+    <string name="about9">"       First, they already have extensive infrastructure and logistics networks, including their stores, which can be used as warehouses and distribution centers for online orders. Second, they have huge economies of scale, which allows them to obtain better margins, which, in turn, means that online profitability, while challenging, is not completely elusive. Third, they are able to appeal to consumers by offering a range of services, like click and collect from stores and curbside pickup, that helps overcome some shopper objections to buying online."</string>
+    <string name="about10">"      These things, together with the rise of automation and robotics in picking and packing, means that this new wave of online innovation and investment will likely succeed. This is, perhaps, the start of the true internet grocery revolution."</string>
+    <string name="web_client_id"></string>
+    <string name="note">Shop Name and shop address are optional. It only manditory for seller.</string>
+    <string name="Seller_text">Upload your products based on your categories.Choose your category start uploading</string>
+    <string name="login_register_details">Login and Register Details</string>
+    <string name="light">Light</string>
+    <string name="deal_text">Top deals your products for every purchase.Get Ready to more discounts</string>
+
+</resources>

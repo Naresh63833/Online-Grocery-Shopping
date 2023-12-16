@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seller.SellerContactSupportActivity">
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FF8F00"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="310dp"
+        android:background="#00000000"
+        android:contentDescription="TODO"
+        android:onClick="sellcontactback"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name *"
+                android:inputType="text"
+                android:minHeight="48dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/email_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email *"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/phone_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number *"
+                android:inputType="number"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/type_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type - User or Seller *"
+                android:inputType="text"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/date_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date *"
+                android:inputType="datetime"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/message_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Message *"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="top" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linear1"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:inputType="text"
+                android:text="Grocery App with contact support"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/location"
+                android:fontFamily="@font/alice"
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="A-100, 9th Floor, Vought Corporate Tower,Sector-136, New town, Tamil Nadu - 201305"
+                android:textAlignment="center"
+                android:textColor="#FF8F00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/email"
+                android:fontFamily="@font/alice"
+                android:inputType="text"
+                android:onClick="emailclick"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="grocerysupport253@gmail.com"
+                android:textAlignment="center"
+                android:textColor="#FF8F00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="180dp"
+                android:drawableLeft="@drawable/phone"
+                android:fontFamily="@font/alice"
+                android:inputType="text"
+                android:onClick="phoneclick"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="9876543210"
+                android:textAlignment="center"
+                android:textColor="#FF8F00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/alice"
+                android:inputType="text"
+                android:text="© Copyright 2023, All Rights Reserved"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

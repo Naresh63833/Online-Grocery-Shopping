@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedActivity">
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shape2"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="310dp"
+        android:background="#00000000"
+        android:contentDescription="TODO"
+        android:onClick="detailback"
+        android:src="@drawable/ic_baseline_keyboard_backspace_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Details"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/detailed_img"
+            android:scaleType="centerCrop"
+            android:contentDescription="TODO" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/detailed_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price : 30/kg"
+                android:textColor="#36D424"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/alice"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="40dp">
+                <TextView
+                    android:id="@+id/detailed_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.0"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/alice"
+                    android:layout_marginTop="14dp"/>
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/rating"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="TODO" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#36D424"
+            android:fontFamily="@font/alice"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailed_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_margin="12dp"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:justificationMode="inter_word"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Name   :   "
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_name"
+                android:text="Shop Name"
+                android:textSize="20sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Location :   "
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shop_location"
+                android:text="Shop Location"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</ScrollView>
+
+        <ImageButton
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#C5FDAD"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="TODO" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:id="@+id/add_item"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/ic_baseline_add_circle_outline_24"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="NotSibling"
+                android:contentDescription="TODO" />
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="23dp"/>
+            <ImageView
+                android:id="@+id/remove_item"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/ic_baseline_remove_circle_outline_24"
+                android:layout_marginLeft="6dp"
+                tools:ignore="NotSibling"
+                android:layout_marginTop="20dp"
+                android:contentDescription="TODO"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape6"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buy_Now"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Now"
+                    android:textColor="#fff"
+                    android:background="#FC0000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

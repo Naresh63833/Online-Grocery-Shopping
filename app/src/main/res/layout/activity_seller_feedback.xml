@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape44"
+    tools:context=".seller.SellerFeedbackActivity">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:inputType="text"
+            android:text="FEEDBACK YOUR RESPONSE"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Very Satisfied"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/feed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="50dp"
+            android:background="#fff"
+            android:lines="10"
+            android:hint="Enter your Feedback"/>
+        <Button
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="SEND FEEDBACK"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/alice"
+            android:textSize="28sp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape11"
+            android:layout_gravity="center_horizontal"
+            android:onClick="feedbutton"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
